@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { ArrowDown, Phone, Shield, Clock, Award } from "lucide-react";
-import Image from "next/image";
 
 export default function Hero() {
   const stats = [
@@ -15,9 +14,12 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center overflow-hidden navy-gradient">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}
+        />
       </div>
 
       {/* Gold Accent Lines */}
@@ -40,7 +42,9 @@ export default function Hero() {
               className="inline-flex items-center gap-2 bg-gold-400/10 border border-gold-400/30 rounded-full px-4 py-2 mb-6"
             >
               <span className="w-2 h-2 bg-gold-400 rounded-full animate-pulse" />
-              <span className="text-gold-400 text-sm font-medium">نخدم جميع محافظات المملكة</span>
+              <span className="text-gold-400 text-sm font-medium">
+                نخدم جميع محافظات المملكة
+              </span>
             </motion.div>
 
             <motion.h1
@@ -50,7 +54,9 @@ export default function Hero() {
               className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6"
             >
               نقل أثاثك بـ
-              <span className="text-gradient block mt-2">أمان واحترافية</span>
+              <span className="text-gradient block mt-2">
+                أمان واحترافية
+              </span>
             </motion.h1>
 
             <motion.p
@@ -59,7 +65,7 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-lg text-white/70 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0"
             >
-              شركة الوسيط الرائدة في نقل وترحيل الأثاث والكنب في الأردن. 
+              شركة الوسيط الرائدة في نقل وترحيل الأثاث والكنب في الأردن.
               نقدم خدمات فك وتركيب، تغليف احترافي، وتخزين آمن بأحدث المعدات.
             </motion.p>
 
@@ -78,6 +84,7 @@ export default function Hero() {
                 <Phone className="w-5 h-5" />
                 تواصل عبر واتساب
               </a>
+
               <a
                 href="#services"
                 className="btn-navy flex items-center justify-center gap-2 text-lg"
@@ -100,8 +107,14 @@ export default function Hero() {
                   className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center"
                 >
                   <stat.icon className="w-6 h-6 text-gold-400 mx-auto mb-2" />
-                  <div className="text-2xl font-black text-white">{stat.value}</div>
-                  <div className="text-xs text-white/60">{stat.label}</div>
+
+                  <div className="text-2xl font-black text-white">
+                    {stat.value}
+                  </div>
+
+                  <div className="text-xs text-white/60">
+                    {stat.label}
+                  </div>
                 </div>
               ))}
             </motion.div>
@@ -114,42 +127,32 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative hidden lg:block"
           >
-            <div className="relative">
-              {/* Main Image Placeholder - will be replaced with actual image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-navy-900/50 border-2 border-gold-400/20">
-                <div className="aspect-[4/3] bg-gradient-to-br from-navy-800 to-navy-900 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-24 h-24 bg-gold-400/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <svg className="w-12 h-12 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                      </svg>
-                    </div>
-<img
-src="/images/pic1.jpeg"
-alt="صورة نقل الأثاث"
-className="w-full h-full object-cover rounded-2xl"
-/>
-                  </div>
-                </div>
-              </div>
+            <img
+              src="/images/pic1.jpeg"
+              alt="صورة نقل الأثاث"
+              className="w-full h-full object-cover rounded-2xl"
+            />
 
-              {/* Floating Badge */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity }}
-                className="absolute -bottom-6 -right-6 bg-gradient-to-br from-gold-400 to-gold-600 text-white rounded-xl p-4 shadow-xl"
-              >
-                <div className="text-2xl font-black">5000+</div>
-                <div className="text-xs">عميل راضٍ</div>
-              </motion.div>
-            </div>
+            {/* Floating Badge */}
+            <motion.div
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 3, repeat: Infinity }}
+              className="absolute -bottom-6 -right-6 bg-gradient-to-br from-gold-400 to-gold-600 text-white rounded-xl p-4 shadow-xl"
+            >
+              <div className="text-2xl font-black">5000+</div>
+              <div className="text-xs">عميل راضٍ</div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
 
       {/* Bottom Wave */}
       <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          viewBox="0 0 1440 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
             fill="#f8fafc"
