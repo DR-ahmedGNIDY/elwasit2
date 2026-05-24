@@ -129,7 +129,6 @@ src="/images/pic1.jpeg"
 alt="صورة نقل الأثاث"
 className="w-full h-full object-cover rounded-2xl"
 />
-                    <p className="text-gold-400 text-xs mt-1">ضع صورتك هنا</p>
                   </div>
                 </div>
               </div>
