@@ -6,7 +6,7 @@ import { MessageCircle } from "lucide-react";
 export default function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/962791234567?text=مرحباً، أريد الاستفسار عن خدمات نقل الأثاث"
+      href="https://wa.me/+962791532016?text=مرحباً، أريد الاستفسار عن خدمات نقل الأثاث"
       target="_blank"
       rel="noopener noreferrer"
       initial={{ scale: 0 }}
