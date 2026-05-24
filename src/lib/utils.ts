@@ -16,8 +16,12 @@ export function formatDate(date: string | Date): string {
   });
 }
 
-export function generateWhatsAppLink(phone: string, message?: string): string {
-  const cleanPhone = phone.replace(/\D/g, '');
-  const encodedMessage = message ? encodeURIComponent(message) : '';
-  return `https://wa.me/${cleanPhone}${encodedMessage ? `?text=${encodedMessage}` : ''}`;
+export function generateWhatsAppLink(message?: string): string {
+const phone = "962791532016";
+
+if (!message) {
+return `https://wa.me/${phone}`;
+}
+
+return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }
