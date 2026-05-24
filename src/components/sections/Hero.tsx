@@ -123,7 +123,16 @@ export default function Hero() {
                       <svg className="w-12 h-12 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                       </svg>
-<img src="/images/pic1.jpeg" alt="صورة نقل الأثاث" className="w-full h-full object-cover rounded-2xl" />
+                    </div>
+<img
+src="/images/pic1.jpeg"
+alt="صورة نقل الأثاث"
+className="w-full h-full object-cover rounded-2xl"
+/>
+                    <p className="text-gold-400 text-xs mt-1">ضع صورتك هنا</p>
+                  </div>
+                </div>
+              </div>
 
               {/* Floating Badge */}
               <motion.div
