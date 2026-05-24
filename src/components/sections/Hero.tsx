@@ -70,7 +70,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12"
             >
               <a
-                href="https://wa.me/962791234567?text=مرحباً، أريد الاستفسار عن خدمات نقل الأثاث"
+                href="https://wa.me/962791532016?text=مرحباً، أريد الاستفسار عن خدمات نقل الأثاث"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary flex items-center justify-center gap-2 text-lg"
