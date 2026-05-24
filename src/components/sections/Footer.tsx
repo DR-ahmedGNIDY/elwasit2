@@ -87,7 +87,7 @@ export default function Footer() {
                 <div>
                   <span className="text-white/60 text-sm block">هاتف / واتساب</span>
                   <a href="tel:+962791234567" className="text-white font-bold hover:text-gold-400 transition-colors">
-                    079-123-4567
+                    078-931-5577
                   </a>
                 </div>
               </li>
