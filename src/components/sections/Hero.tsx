@@ -125,7 +125,8 @@ export default function Hero() {
                       </svg>
                     </div>
                     <p className="text-white/60 text-sm">صورة نقل الأثاث</p>
-                    <p className="text-gold-400 text-xs mt-1">ضع صورتك هنا</p>
+                    <p className="text-gold-400 text-xs mt-1">public/images/pic1.jpeg
+</p>
                   </div>
                 </div>
               </div>
