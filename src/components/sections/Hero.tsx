@@ -12,6 +12,16 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden navy-gradient">
+       {/* Background Image */}
+  <div className="absolute inset-0 z-0">
+    <img
+      src="/images/pic2.png"
+      alt="background"
+      className="w-full h-full object-cover opacity-30"
+    />
+
+    <div className="absolute inset-0 bg-black/60" />
+  </div>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div
